@@ -13,11 +13,15 @@ gem 'sidekiq-scheduler', '~> 5.0', '>= 5.0.3'
 
 gem 'guard'
 gem 'guard-livereload', require: false
+gem 'jbuilder', '~> 2.0'
 
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem 'rspec-rails', '~> 6.1.0'
+  gem 'factory_bot_rails'
+  gem 'pry', '~> 0.15.0'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 end
 
 group :development do
